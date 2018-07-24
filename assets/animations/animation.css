@@ -1,0 +1,119 @@
+/*body{
+    background-color: #159739;
+}*/
+
+.chartImage {
+    position: absolute;
+    top: 21%;
+    left: 100px;    
+    margin:-60px 0 0 -60px;       
+}
+
+.chatImage {
+    position: absolute;
+    top: 19%;
+    left: 100px;    
+    margin:-60px 0 0 -60px;       
+}
+
+.circleImagePosition {
+    position: absolute;
+    top: 20%;
+    left: 100px;    
+    margin:-60px 0 0 -60px;    
+}
+
+.titleChart {
+    position: absolute;
+    top: 52%;
+    left: 120px;
+    font-size: 40px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.begin {
+    position: absolute;
+    top: 43%;
+    left: 120px;
+    font-size: 25px;
+    color: #0d8aa5;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.titleChat {
+    position: absolute;
+    top: 52%;
+    left: 150px;
+    font-size: 40px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titleQR {
+	position: absolute;
+    top: 52%;
+    left: 160px;
+    font-size: 40px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titleApproval {
+	position: absolute;
+    top: 52%;
+    left: 70px;
+    font-size: 40px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.titleAssistant {
+	position: absolute;
+    top: 52%;
+    left: 110px;
+    font-size: 40px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.textChart {
+    position: absolute;
+    text-align: center;
+    top: 60%;
+    /* left: 20px; */
+    font-size: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.textQR {
+	position: absolute;
+    text-align: center;
+    top: 60%;
+    left: 45px;
+    font-size: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.textApprovals {
+	position: absolute;
+    text-align: center;
+    top: 60%;
+    left: 25px;
+    font-size: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.textAssistant {
+	position: absolute;
+    text-align: center;
+    top: 60%;
+    left: 100px;
+    font-size: 20px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}

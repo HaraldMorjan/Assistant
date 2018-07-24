@@ -1,0 +1,43 @@
+<div class="page" data-name="notifications">
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="left">
+				<a href="#" class="back link">
+					<i class="fa fa-angle-left"></i>
+				</a>
+			</div>
+			<div class="title">Notificaciones</div>
+		</div>
+	</div>
+	<div class="subnavbar task-subnavbar">
+		<div class="subnavbar-inner">
+			<div class="segmented segmented-raised">
+				<a class="button tab-link tab-link-active" href="#pendingApproval">Pendientes</a>
+				<a class="button tab-link" href="#approved">Aprobadas</a>
+				<a class="button tab-link" href="#cancel">Rechazadas</a>
+			</div>
+		</div>
+	</div>
+	<div class="page-content" style="padding-top:75px;">
+		<div class="tabs">
+			<div class="tab tab-active" id="pendingApproval">
+				<div class="list no-hairlines media-list user-list">
+					<ul id="pendingApproveList">
+					</ul>
+				</div>
+			</div>
+			<div class="tab" id="approved">
+				<div class="list no-hairlines media-list user-list">
+					<ul id="approvedList">
+					</ul>
+				</div>
+			</div>
+			<div class="tab" id="cancel">
+				<div class="list no-hairlines media-list user-list">
+					<ul id="cancelApproveList">
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

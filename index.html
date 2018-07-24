@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#3a57c4">
+    <title>MP Assistant</title>
+    <link rel="stylesheet" href="assets/css/framework7.ios.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="resources/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="resources/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="resources/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="resources/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="resources/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="resources/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="resources/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="resources/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="resources/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="resources/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="resources/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="resources/favicon/">
+    
+</head>
+
+<body >
+    <!-- <div id="app" style="background: url(assets/img/logo-mp5.png);background-size: contain;background-repeat: no-repeat;background-position: 50% 50%;"> -->
+        <div id="app">
+        <div class="statusbar"></div>
+
+        <div class="panel panel-left panel-reveal">
+            <div class="block">
+                <div class="side-menu" id="sidebar-menu">
+                    <ul>
+                        <li>
+                            <a class="panel-close" href="/">
+								Dashboard
+							</a>
+                        </li>
+						<li class="submenu">
+                            <a href="#"><span>Employees</span> <span class="menu-arrow"></span></a>
+                            <ul style="display: none;">
+                                <li><a class="panel-close" href="/employees/"> All Employees</a></li>
+                                <li><a class="panel-close" href="/holidays/"> Holidays </a></li>
+                                <li><a class="panel-close" href="/leaves/"> Leave Requests </a></li>
+                                <li><a class="panel-close" href="/departments/"> Departments </a></li>
+                                <li><a class="panel-close" href="/designations/"> Designations </a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="panel-close" href="/clients/">
+								Clients
+                            </a>
+                        </li>
+                        <li>
+                            <a class="panel-close" href="/projects/">
+								Projects
+                            </a>
+                        </li>
+                        <li>
+                            <a class="panel-close" href="/tasks/">
+								Tasks
+                            </a>
+                        </li>
+						<li class="submenu">
+                            <a href="#"><span>Accounts</span> <span class="menu-arrow"></span></a>
+                            <ul style="display: none;">
+                                <li><a class="panel-close" href="/estimates/"> Estimates</a></li>
+                                <li><a class="panel-close" href="/invoices/"> Invoices </a></li>
+                                <li><a class="panel-close" href="/payments/"> Payments </a></li>
+                                <li><a class="panel-close" href="/taxes/"> Taxes </a></li>
+                            </ul>
+                        </li>
+						<li class="submenu">
+                            <a href="#"><span>Payroll</span> <span class="menu-arrow"></span></a>
+                            <ul style="display: none;">
+                                <li><a class="panel-close" href="/salary/"> Employee Salary </a></li>
+                                <li><a class="panel-close" href="/salary-view/"> Payslip </a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="panel-close" href="/email/">
+								Email
+                            </a>
+                        </li>
+                        <li>
+                            <a class="panel-close" href="/chat/">
+								Chat
+                            </a>
+                        </li>
+                        <li class="submenu">
+                            <a href="#"><span>Calls</span> <span class="menu-arrow"></span></a>
+                            <ul style="display: none;">
+                                <li><a class="panel-close" href="/voice-call/"> Voice Call </a></li>
+                                <li><a class="panel-close" href="/video-call/"> Video Call </a></li>
+                                <li><a class="panel-close" href="/incoming-call/"> Incoming Call </a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a class="panel-close" href="/users/">
+								Users
+                            </a>
+                        </li>
+						<li>
+                            <a class="panel-close" href="/settings/">
+								Settings
+                            </a>
+                        </li>
+						<li class="submenu">
+                            <a href="#"><span>Pages</span> <span class="menu-arrow"></span></a>
+                            <ul style="display: none;">
+                                <li><a class="panel-close" href="/login/"> Login </a></li>
+                                <li><a class="panel-close" href="/register/"> Register </a></li>
+                                <li><a class="panel-close" href="/forgot-password/"> Forgot Password </a></li>
+                                <li><a class="panel-close" href="/profile/"> Profile </a></li>
+                                <li><a class="panel-close" href="/walkthrough/"> Walkthrough </a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="view view-main view-init" data-url="/">
+            <div class="page" data-name="index">
+                <div class="navbar two-action no-hairline">
+                    <div class="navbar-inner">
+                        <div class="left">
+                            <a href="#" class="link icon-only panel-open" data-panel="left"><i class="material-icons">menu</i></a>
+                        </div>
+                        
+                        <div class="sliding title"><img src="resources/favicon/android-icon-192x192.png" alt=""></div>
+                        <div class="right">
+                            <a href="/notifications/" class="link icon-only" onclick="showNotification()"><i class="material-icons">notifications</i></a>
+                            <a href="#" data-popover=".main-menu" class="link icon-only popover-open"><i class="material-icons">more_vert</i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="popover main-menu">
+                    <div class="popover-angle"></div>
+                    <div class="popover-inner">
+                        <div class="list">
+                            <ul>
+                                <li><a href="/profile/" class="list-button item-link popover-close">My Profile</a></li>
+                                <li><a href="/settings/" class="list-button item-link popover-close">Settings</a></li>
+                                <li><a href="/login/" class="list-button item-link popover-close">Log Out</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+				
+                <div class="page-content">
+                    <div class="block">
+                        <div class="dashboard-area">
+                            <div class="row">
+                                <div class="col-50 tablet-50">
+									<a href="/projects/">
+										<div class="dash-widget">
+											<div class="dash-widget-icon"><i class="fa fa-cubes"></i></div>
+											<div class="dash-widget-info">
+												<h4>112</h4>
+												<p>Projects</p>
+											</div>
+										</div>
+									</a>
+                                </div>
+                                <div class="col-50 tablet-50">
+									<a href="/clients/">
+										<div class="dash-widget">
+											<div class="dash-widget-icon"><i class="fa fa-usd"></i></div>
+											<div class="dash-widget-info">
+												<h4>$44</h4>
+												<p>Clients</p>
+											</div>
+										</div>
+									</a>
+                                </div>
+                                <div class="col-50 tablet-50">
+									<a href="/tasks/">
+										<div class="dash-widget">
+											<div class="dash-widget-icon"><i class="fa fa-diamond"></i></div>
+											<div class="dash-widget-info">
+												<h4>37</h4>
+												<p>Tasks</p>
+											</div>
+										</div>
+									</a>
+                                </div>
+                                <div class="col-50 tablet-50">
+									<a href="/employees/">
+										<div class="dash-widget">
+											<div class="dash-widget-icon"><i class="fa fa-user"></i></div>
+											<div class="dash-widget-info">
+												<h4>218</h4>
+												<p>Employees</p>
+											</div>
+										</div>
+									</a>
+                                </div>
+                                <div class="col-50 tablet-50">
+                                        <a href="/chat/">
+                                            <div class="dash-widget">
+                                                <div class="dash-widget-icon"><i class="fa fa-comments"></i></div>
+                                                <div class="dash-widget-info">
+                                                    <h4>218</h4>
+                                                    <p>Chat</p>
+                                                </div>
+                                            </div>
+                                        </a>
+                                    </div>
+                            </div>
+                            <div class="row" id="tt">
+                                <div class="col-100 tablet-50">
+                                    <div class="chart-box">
+                                        <h3 class="title is-3">Bar Chart</h3>
+										<canvas id="bargraph"></canvas>
+                                    </div>
+                                </div>
+                                <div class="col-100 tablet-50">
+                                    <div class="chart-box m-b-0">
+                                        <h3 class="title is-3">Line Graph</h3>
+                                        <canvas id="canvas"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	
+    <script type="text/javascript" src="assets/js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="node_modules/framework7/js/framework7.min.js"></script>
+    <!-- <script type="text/javascript" src="assets/js/framework7.min.js"></script> -->
+    <script type="text/javascript" src="assets/js/Chart.bundle.js"></script>
+    <script type="text/javascript" src="assets/js/routes.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+    <script type="text/javascript" src="node_modules/push.js/app/push.js"></script>
+    <script type="text/javascript" src="node_modules/moment/min/moment-with-locales.js"></script>
+    <script type="text/javascript" src="assets/js/users.js"></script>
+    <script type="text/javascript" src="resources/lib/signalR/jquery.signalR-2.2.1.min.js"></script>
+    <script type="text/javascript" src="http://192.168.14.74:50006/signalr/hubs"></script>
+    <!-- <script src="192.168.14.74:50006/signalr"></script> -->
+</body>
+
+</html>

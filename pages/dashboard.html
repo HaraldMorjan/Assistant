@@ -1,0 +1,309 @@
+<div class="statusbar">
+</div>
+
+<div class="panel panel-left panel-reveal">
+    <div class="block">
+        <div class="side-menu" id="sidebar-menu">
+            <ul>
+                <li>
+                    <a class="panel-close" href="/dashboard/">
+                        Dashboard
+                    </a>
+                </li>
+                <li class="submenu">
+                    <a href="#">
+                        <span>Employees</span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <ul style="display: none;">
+                        <li>
+                            <a class="panel-close" href="/employees/"> All Employees</a>
+                        </li>
+                        <li>
+                            <a class="panel-close" href="/holidays/"> Holidays </a>
+                        </li>
+                        <li>
+                            <a class="panel-close" href="/leaves/"> Leave Requests </a>
+                        </li>
+                        <li>
+                            <a class="panel-close" href="/departments/"> Departments </a>
+                        </li>
+                        <li>
+                            <a class="panel-close" href="/designations/"> Designations </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="panel-close" href="/clients/">
+                        Clients
+                    </a>
+                </li>
+                <li>
+                    <a class="panel-close" href="/projects/">
+                        Projects
+                    </a>
+                </li>
+                <li>
+                    <a class="panel-close" href="/tasks/">
+                        Tasks
+                    </a>
+                </li>
+                <li class="submenu">
+                    <a href="#">
+                        <span>Accounts</span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <ul style="display: none;">
+                        <li>
+                            <a class="panel-close" href="/estimates/"> Estimates</a>
+                        </li>
+                        <li>
+                            <a class="panel-close" href="/invoices/"> Invoices </a>
+                        </li>
+                        <li>
+                            <a class="panel-close" href="/payments/"> Payments </a>
+                        </li>
+                        <li>
+                            <a class="panel-close" href="/taxes/"> Taxes </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="submenu">
+                    <a href="#">
+                        <span>Payroll</span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <ul style="display: none;">
+                        <li>
+                            <a class="panel-close" href="/salary/"> Employee Salary </a>
+                        </li>
+                        <li>
+                            <a class="panel-close" href="/salary-view/"> Payslip </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="panel-close" href="/email/">
+                        Email
+                    </a>
+                </li>
+                <li>
+                    <a class="panel-close" href="/chat/">
+                        Chat
+                    </a>
+                </li>
+                <li class="submenu">
+                    <a href="#">
+                        <span>Calls</span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <ul style="display: none;">
+                        <li>
+                            <a class="panel-close" href="/voice-call/"> Voice Call </a>
+                        </li>
+                        <li>
+                            <a class="panel-close" href="/video-call/"> Video Call </a>
+                        </li>
+                        <li>
+                            <a class="panel-close" href="/incoming-call/"> Incoming Call </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="panel-close" href="/users/">
+                        Users
+                    </a>
+                </li>
+                <li>
+                    <a class="panel-close" href="/settings/">
+                        Settings
+                    </a>
+                </li>
+                <li class="submenu">
+                    <a href="#">
+                        <span>Pages</span>
+                        <span class="menu-arrow"></span>
+                    </a>
+                    <ul style="display: none;">
+                        <li>
+                            <a class="panel-close" href="/login/"> Login </a>
+                        </li>
+                        <li>
+                            <a class="panel-close" href="/register/"> Register </a>
+                        </li>
+                        <li>
+                            <a class="panel-close" href="/forgot-password/"> Forgot Password </a>
+                        </li>
+                        <li>
+                            <a class="panel-close" href="/profile/"> Profile </a>
+                        </li>
+                        <li>
+                            <a class="panel-close" href="/walkthrough/"> Walkthrough </a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<div class="view view-main view-init">
+    <div class="page" data-name="dashboard" data-page="dashboard-page">
+        <div class="navbar two-action no-hairline">
+            <div class="navbar-inner">
+                <div class="left">
+                    <a href="#" class="link icon-only panel-open" data-panel="left">
+                        <i class="material-icons">menu</i>
+                    </a>
+                    <div class="sliding title">
+                            <img src="resources/favicon/android-icon-192x192.png" alt="">
+                            <!-- <img src="assets/img/logo_google.gif" alt=""> -->
+                        </div>
+                    <!-- <img class="avatar-image" id="userAvatar" src="" alt="userAvatar">
+                    <div class="sliding title" id="username"></div> -->
+                </div>
+                <!-- <div class="sliding title">
+                    <img src="resources/favicon/android-icon-192x192.png" alt="">
+                </div> -->
+                <div class="right">
+                    <!-- <a href="/notifications/" class="link icon-only">
+                        <i class="material-icons">notifications</i>
+                    </a> -->
+                    <!-- <a href="#" class="link icon-only" onclick="showNotification()"><i class="material-icons">notifications</i></a> -->
+                    <div class="sliding title" id="username"></div>
+                    <img class="avatar-image" id="userAvatar" src="" alt="userAvatar">
+                    <a href="#" data-popover=".main-menu" class="link icon-only popover-open">
+                        <i class="material-icons">more_vert</i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="popover main-menu">
+            <div class="popover-angle"></div>
+            <div class="popover-inner">
+                <div class="list">
+                    <ul>
+                        <li>
+                            <a href="/profile/" class="list-button item-link popover-close">Mi Perfil</a>
+                        </li>
+                        <li>
+                            <a href="/settings/" class="list-button item-link popover-close">Configuracion</a>
+                        </li>
+                        <li>
+                            <a href="/login/" class="list-button item-link popover-close">Salir</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="page-content">
+            <div class="block">
+                <div class="dashboard-area">
+                    <div class="row">
+                        <div class="col-50 tablet-50">
+                            <a href="/chat/">
+                                <div class="dash-widget">
+                                    <div class="dash-widget-icon">
+                                        <i class="fa fa-comments success"></i>
+                                    </div>
+                                    <div class="dash-widget-info">
+                                        <h4>218</h4>
+                                        <p>Chat</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-50 tablet-50">
+                            <a href="/notifications/">
+                                <div class="dash-widget">
+                                    <div class="dash-widget-icon">
+                                        <i class="fa fa-bell warning"></i>
+                                    </div>
+                                    <div class="dash-widget-info">
+                                            <!-- <div class="item-after"> <span id ="pendingApprovalCounter" class="badge widget-badge">5</span></div> -->
+                                        <h4 id ="pendingApprovalCounter">100</h4>
+                                        <p>Aprobaciones</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <!-- <div class="col-50 tablet-50">
+                            <a href="/projects/">
+                                <div class="dash-widget">
+                                    <div class="dash-widget-icon">
+                                        <i class="fa fa-cubes"></i>
+                                    </div>
+                                    <div class="dash-widget-info">
+                                        <h4>112</h4>
+                                        <p>Projects</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-50 tablet-50">
+                            <a href="/clients/">
+                                <div class="dash-widget">
+                                    <div class="dash-widget-icon">
+                                        <i class="fa fa-usd"></i>
+                                    </div>
+                                    <div class="dash-widget-info">
+                                        <h4>$44</h4>
+                                        <p>Clients</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div> -->
+                        <div class="col-50 tablet-50">
+                            <a href="/tasks/">
+                                <div class="dash-widget">
+                                    <div class="dash-widget-icon">
+                                        <i class="fa fa-tasks"></i>
+                                    </div>
+                                    <div class="dash-widget-info">
+                                        <h4>12</h4>
+                                        <p>Tareas</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-50 tablet-50">
+                            <a href="/employees/">
+                                <div class="dash-widget">
+                                    <div class="dash-widget-icon">
+                                        <i class="fa fa-qrcode"></i>
+                                    </div>
+                                    <div class="dash-widget-info">
+                                        <h4>1</h4>
+                                        <p>QR</p>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+
+                    </div>
+                    <div class="row" id="tt">
+                        <div class="col-100 tablet-50">
+                            <div class="chart-box">
+                                <h3 class="title is-3">Productivad de analistas</h3>
+                                <canvas id="bargraph"></canvas>
+                            </div>
+                        </div>
+                        <div class="col-100 tablet-50">
+                            <div class="chart-box m-b-0">
+                                <h3 class="title is-3">Monto Salvado Vs. Monto Perdido</h3>
+                                <canvas id="canvas"></canvas>
+                            </div>
+                        </div>
+                        <div class="col-100 tablet-50">
+                            <div class="chart-box m-b-0">
+                                <h3 class="title is-3">Calificaciones por analista</h3>
+                                <canvas id="qualificationsPerUser"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

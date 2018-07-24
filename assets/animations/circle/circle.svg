@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg class="image" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="74px" height="81px" viewBox="0 0 74 81" enable-background="new 0 0 74 81" xml:space="preserve">
+	<style>
+		.image {			
+			-webkit-animation:spin 4s linear infinite;
+			-moz-animation:spin 4s linear infinite;
+			animation:spin 4s linear infinite;
+		}
+		@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
+		@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+		@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); } }
+	</style>
+<rect x="-168.5" y="-78.5" display="none" stroke="#000000" stroke-miterlimit="10" width="430" height="350"/>
+<g display="none">
+	
+		<circle display="inline" fill="none" stroke="#FFFFFF" stroke-width="1.0622" stroke-miterlimit="10" cx="37.609" cy="41.567" r="23.515"/>
+	<path display="inline" fill="none" stroke="#FFFFFF" stroke-width="1.0622" stroke-miterlimit="10" d="M21.03,17.253
+		c-1.146,0.229-3.441,2.523-3.441,2.523"/>
+	<path display="inline" fill="none" stroke="#FFFFFF" stroke-width="1.0622" stroke-miterlimit="10" d="M33.188,12.206
+		c0,0,12.979-1.09,17.978,2.845"/>
+	<line display="inline" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="58.5" y1="15" x2="58.5" y2="17"/>
+	<line display="inline" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="60" y1="18.5" x2="62" y2="18.5"/>
+	<line display="inline" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="57" y1="18.5" x2="55" y2="18.5"/>
+	<line display="inline" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="58.5" y1="20" x2="58.5" y2="22"/>
+	
+		<ellipse display="inline" fill="none" stroke="#FFFFFF" stroke-width="0.604" stroke-miterlimit="10" cx="63.702" cy="30.902" rx="1.607" ry="1.721"/>
+	<path display="inline" fill="none" stroke="#FFFFFF" stroke-width="0.604" stroke-miterlimit="10" d="M65.536,42.717
+		c0,0,0.229-6.882-0.459-6.653"/>
+	<path display="inline" fill="none" stroke="#FFFFFF" stroke-width="0.604" stroke-miterlimit="10" d="M64.389,49.6
+		c0,0-2.753,9.865-10.782,15.141"/>
+	<path display="inline" fill="none" stroke="#FFFFFF" stroke-width="0.604" stroke-miterlimit="10" d="M48.56,67.723
+		c0,0-1.605,0.917-2.753,1.147"/>
+	<path display="inline" fill="none" stroke="#FFFFFF" stroke-width="0.604" stroke-miterlimit="10" d="M37.318,70.247
+		c0,0-9.177,0-14.453-3.67"/>
+	<path display="inline" fill="none" stroke="#FFFFFF" stroke-width="0.604" stroke-miterlimit="10" d="M18.736,64.052
+		c0,0-3.212-3.899-3.9-4.588"/>
+	<line display="inline" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="8.5" y1="41" x2="8.5" y2="43"/>
+	<line display="inline" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="10" y1="44.5" x2="12" y2="44.5"/>
+	<line display="inline" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="7" y1="44.5" x2="5" y2="44.5"/>
+	<line display="inline" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="8.5" y1="46" x2="8.5" y2="48"/>
+	
+		<ellipse display="inline" fill="none" stroke="#FFFFFF" stroke-width="0.604" stroke-miterlimit="10" cx="11.702" cy="55.902" rx="1.607" ry="1.721"/>
+	<path display="inline" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M8.412,38.588c0,0,2.065-11.929,4.359-13.076"/>
+</g>
+<g display="none">
+	<rect x="25.5" y="43.5" display="inline" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="3" height="6"/>
+	<rect x="30.5" y="41.5" display="inline" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="3" height="8"/>
+	<rect x="35.5" y="38.5" display="inline" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="3" height="11"/>
+	<rect x="40.5" y="40.5" display="inline" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="3" height="9"/>
+	<rect x="45.5" y="33.5" display="inline" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="3" height="16"/>
+	<circle display="inline" fill="#FFFFFF" cx="27.542" cy="37.658" r="0.906"/>
+	<circle display="inline" fill="#FFFFFF" cx="32.542" cy="35.658" r="0.906"/>
+	<circle display="inline" fill="#FFFFFF" cx="37.542" cy="31.658" r="0.906"/>
+	<circle display="inline" fill="#FFFFFF" cx="42.542" cy="34.658" r="0.906"/>
+	<circle display="inline" fill="#FFFFFF" cx="46.542" cy="27.658" r="0.906"/>
+	<polyline display="inline" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="28.138,37.523 32.541,35.658 
+		37.351,31.74 42.541,34.658 46.541,27.658 	"/>
+</g>
+<g>
+	<circle fill="none" stroke="#FFFFFF" stroke-width="1.0622" stroke-miterlimit="10" cx="37.609" cy="41.567" r="23.515"/>
+	<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M21.423,16.973c-1.018,0.576-3.834,2.804-3.834,2.804"/>
+	<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M33.167,12.5c0,0,10.834-1.508,17.938,3.729"/>
+	<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="57.5" y1="16" x2="57.5" y2="18"/>
+	<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="59" y1="19.5" x2="61" y2="19.5"/>
+	<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="56" y1="19.5" x2="54" y2="19.5"/>
+	<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="57.5" y1="21" x2="57.5" y2="23"/>
+	
+		<ellipse fill="none" stroke="#FFFFFF" stroke-width="0.604" stroke-miterlimit="10" cx="63.702" cy="29.902" rx="1.607" ry="1.721"/>
+	<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M66.536,42.717c0,0-0.38-6.608-0.459-6.653"/>
+	<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M64.389,49.6c0,0-2.753,9.865-10.782,15.141"/>
+	<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M48.56,67.723c0,0-1.605,0.917-2.753,1.147"/>
+	<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M37.318,70.247c0,0-9.177,0-14.453-3.67"/>
+	<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M19.25,63.875c0,0-3.726-3.722-4.414-4.411"/>
+	<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="8.5" y1="41" x2="8.5" y2="43"/>
+	<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="10" y1="44.5" x2="12" y2="44.5"/>
+	<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="7" y1="44.5" x2="5" y2="44.5"/>
+	<line fill="none" stroke="#FFFFFF" stroke-miterlimit="10" x1="8.5" y1="46" x2="8.5" y2="48"/>
+	
+		<ellipse fill="none" stroke="#FFFFFF" stroke-width="0.604" stroke-miterlimit="10" cx="11.702" cy="55.902" rx="1.607" ry="1.721"/>
+	<path fill="none" stroke="#FFFFFF" stroke-miterlimit="10" d="M8.446,38.517c0.423-5.177,1.322-8.619,4.325-13.005"/>
+</g>
+<g display="none">
+	<rect x="98.5" y="41.5" display="inline" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="3" height="6"/>
+	<rect x="103.5" y="39.5" display="inline" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="3" height="8"/>
+	<rect x="108.5" y="36.5" display="inline" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="3" height="11"/>
+	<rect x="113.5" y="38.5" display="inline" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="3" height="9"/>
+	<rect x="118.5" y="31.5" display="inline" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" width="3" height="16"/>
+	<circle display="inline" fill="#FFFFFF" cx="100.542" cy="35.658" r="0.906"/>
+	<circle display="inline" fill="#FFFFFF" cx="105.542" cy="33.658" r="0.906"/>
+	<circle display="inline" fill="#FFFFFF" cx="110.542" cy="29.658" r="0.906"/>
+	<circle display="inline" fill="#FFFFFF" cx="115.542" cy="32.658" r="0.906"/>
+	<circle display="inline" fill="#FFFFFF" cx="119.542" cy="25.658" r="0.906"/>
+	<polyline display="inline" fill="none" stroke="#FFFFFF" stroke-miterlimit="10" points="101.138,35.523 105.541,33.658 
+		110.351,29.74 115.541,32.658 119.541,25.658 	"/>
+</g>
+</svg>

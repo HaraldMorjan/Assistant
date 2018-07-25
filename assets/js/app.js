@@ -8,6 +8,7 @@ var userAvatar,
 	userName,
 	pendingApprovalArray = [],
 	approvedArray = [],
+	viewerMessages = [],
 	chatUser,
 	chatUserAvatar,
 	botConfig = [
@@ -191,7 +192,7 @@ var app = new Framework7({
 					// document.getElementById("profileImage").src=userAvatar
 					break;
 				case "dashboard":
-					document.getElementById("userAvatar").src = userAvatar;
+					document.getElementById("userAvatar").src = (userAvatar || users.default.avatar);
 					document.getElementById("username").innerHTML = userName;
 					getchart();
 					getNotifications();
@@ -201,6 +202,23 @@ var app = new Framework7({
 					break;
 				case "chat-view":
 					document.getElementById("chatTitle").innerText = chatUser;
+					break;
+				case "chat-viewer":
+					console.log("msgs", viewerMessages);
+					var userAvatar = users.jpalacios.avatar;
+					var chatMessages = document.getElementById("chatMessagesViewer");
+					for (let msg of viewerMessages) {
+						var chatEl = document.createElement("div");
+						chatEl.className = "message message-received message-first message-last message-tail";
+						var userAvatar = users.jpalacios.avatar;
+						chatEl.innerHTML = String.format('<div style="background-image:url({1})" class="message-avatar"></div> <div class="message-content"><div class="message-bubble"><div class="message-text full-text">{0}</div></div></div>', msg, userAvatar);
+						chatMessages.appendChild(chatEl);
+					}
+					chatMessages.scrollIntoView(false);
+					break;
+				case "chat":
+					viewerChatUserAvatar = document.getElementById("viewerChatUserAvatar");
+					viewerChatUserAvatar.src = users.jpalacios.avatar
 					break;
 			}
 			// if (page.name === 'index') {
@@ -213,7 +231,7 @@ var app = new Framework7({
 			switch (pageName) {
 				case "login":
 					var userNameField = page.$el.find('input[name="username"]');
-					var user = userNameField.val();
+					var user = userNameField.val().toLowerCase();
 					try {
 						userAvatar = users[user].avatar;
 						userName = users[user].fullname;
@@ -592,6 +610,13 @@ function getNotifications() {
 		pendingApprovalCounterEl.innerText = pendingApprovalArray.length;
 	}
 }
+function getChats() {
+	var chatCounterEl = document.getElementById("chatCounter");
+	if (chatCounterEl) {
+		chatCounterEl.innerText = viewerMessages.length;
+	}
+
+}
 function callbackNotification(msg, title) {
 	var notification = app.notification.create({
 		icon: '<i class="icon demo-icon"><img src="assets/img/MLogoHD.png"></i>',
@@ -676,13 +701,29 @@ function initSignalConnection() {
 							var jsonPerson = JSON.parse(jsonMsg.message);
 							console.log(jsonPerson);
 							// String.format('<li class="swipeout deleted-callback"><a href="/project-view/"><div class="item-content swipeout-content"><div class="item-media"><img src="{2}" width="36" class="rounded" alt=""></div><div class="item-inner"><div class="item-title-row"><div class="item-title noti-title">Aprobación requerida <span class="noti-text">por la creación del usuario</span> {0} </div></div></div></div></a><div class="swipeout-actions-left"><a href="#" onclick="approvePerson(this)" class="color-green swipeout-aprove swipeout-delete swipeout-overswipe" recordId="{1}">Aprobar</a><a href="#" onclick="decline(this)" class="swipeout-delete" recordId="{1}">Rechazar</a></div></li>', jsonPerson.name, jsonPerson.code,jsonMsg.code,);
-							var personObject = String.format('<li class="swipeout deleted-callback"><a href="/project-view/"><div class="item-content swipeout-content"><div class="item-media"><img src="{3}" width="36" class="rounded" alt=""></div><div class="item-inner"><div class="item-title-row"><div class="item-title noti-title">Aprobación requerida <span class="noti-text">por la creación de la condición</span> {1}-{0} </div></div></div></div></a><div class="swipeout-actions-left"><a href="#" onclick="approveCondition(this)" class="color-green swipeout-aprove swipeout-delete swipeout-overswipe" recordId="{2}">Aprobar</a><a href="#" onclick="declineCondition(this)" class="swipeout-delete" recordId="{2}">Rechazar</a></div></li>', jsonPerson.name, jsonPerson.code, jsonMsg.code,jsonPerson.avatar);
+							var personObject = String.format('<li class="swipeout deleted-callback"><a href="/project-view/"><div class="item-content swipeout-content"><div class="item-media"><img src="{3}" width="36" class="rounded" alt=""></div><div class="item-inner"><div class="item-title-row"><div class="item-title noti-title">Aprobación requerida <span class="noti-text">por la creación de la condición</span> {1}-{0} </div></div></div></div></a><div class="swipeout-actions-left"><a href="#" onclick="approveCondition(this)" class="color-green swipeout-aprove swipeout-delete swipeout-overswipe" recordId="{2}">Aprobar</a><a href="#" onclick="declineCondition(this)" class="swipeout-delete" recordId="{2}">Rechazar</a></div></li>', jsonPerson.name, jsonPerson.code, jsonMsg.code, jsonPerson.avatar);
 							pendingApprovalArray.push(personObject);
 							// app.methods.callbackNotification("Nueva aprobacion requerida", "Aprobacion de condición");
 							showNotification("Nueva aprobacion requerida", "Aprobacion de condición");
 							getNotifications();
 							break;
 					}
+					break;
+				case "chat":
+					if (senderId === "262A87D9-FC9C-43B9-9CF2-001ACC27AE61") {
+						var chatMessages = document.getElementById("chatMessagesViewer");
+						if (chatMessages) {
+							var chatEl = document.createElement("div");
+							chatEl.className = "message message-received message-first message-last message-tail";
+							var userAvatar = users.jpalacios.avatar;
+							chatEl.innerHTML = String.format('<div style="background-image:url({1})" class="message-avatar"></div> <div class="message-content"><div class="message-bubble"><div class="message-text full-text">{0}</div></div></div>', msg, userAvatar);
+							chatMessages.appendChild(chatEl);
+							chatMessages.scrollIntoView(false);
+						}
+					}
+					showNotification("Mensaje de Josué Palacios", "Nuevo mensaje");
+					viewerMessages.push(msg);
+					getChats();
 					break;
 			}
 		}
@@ -762,6 +803,31 @@ function declineCondition(btn) {
 	showNotification("Solicitud Rechazada");
 	getNotifications();
 
+}
+function sendMessageViewer() {
+	var chatMessages = document.getElementById("chatMessagesViewer");
+	var chatText = document.getElementById("chatTextViewer");
+	var text = chatText.value;
+	if (text != "") {
+		var chatEl = document.createElement("div");
+		chatEl.className = "message message-sent message-last message-tail";
+		chatEl.innerHTML = String.format('<div class="message-content"><div class="message-bubble"><div class="message-text full-text">{0}</div></div></div>', text);
+		// chatEl.className = "message message-received message-first message-last message-tail";
+		// chatEl.innerHTML = String.format('<div style="background-image:url({1})" class="message-avatar"></div> <div class="message-content"><div class="message-bubble"><div class="message-text full-text">{0}</div></div></div>', text,chatUserAvatar);
+		chatMessages.appendChild(chatEl);
+		chatText.value = "";
+		chatMessages.scrollIntoView(false);
+		hubProxy.server.chatViewerMessage("chat", text, "773171A5-AEFB-4F47-B90B-2BFCA6706E22", "262A87D9-FC9C-43B9-9CF2-001ACC27AE61");
+		// setTimeout(() => {
+		// 	// var swiper = app.swiper.create('.swiper-container', {
+		// 	// 	speed: 400,
+		// 	// 	spaceBetween: 100
+		// 	// });
+		// 	var token = botResponse(text);
+		// 	// console.log("token", token);
+		// 	responseListeners(token);
+		// }, 1000);
+	}
 }
 function sendMessage(msg) {
 	var chatMessages = document.getElementById("chatMessages");

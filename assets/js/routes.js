@@ -161,6 +161,10 @@ var routes = [
       url: './pages/chat-view.html',
   },
   {
+    path: '/chat-viewer/',
+    url: './pages/chat-viewer.html',
+},
+  {
       path: '/invoices/',
       url: './pages/invoices.html',
   },
